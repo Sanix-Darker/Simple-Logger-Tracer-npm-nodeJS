@@ -26,8 +26,12 @@ Run:<br>
 
 ## What is done?
   
-  In your /log directory, Kennylog will store *each daily logs* of the system life
+  In your */log* directory, Kennylog will store *each daily logs* of the system life
 
+## Why use this?
+
+  I assume, ther is a lot of king of tracer for nodeJS, but, this is the best you can use because, you know exactly how you can personnalize it and it's need only 3 dependencies
+  
 ## Authors
 
 * **Sanix Darker**
