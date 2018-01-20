@@ -23,9 +23,14 @@ Run:<br>
     cd /path/to/thedownload/project
     node index.js
   ```
+
+## What is done?
+  
+  In your /log directory, Kennylog will store *each daily logs* of the system life
+
 ## Authors
 
-* **Sanix Darker** - *Initial work*
+* **Sanix Darker**
 
 ## Acknowledgments
 
