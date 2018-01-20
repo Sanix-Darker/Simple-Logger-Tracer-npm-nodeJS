@@ -1,0 +1,13 @@
+{
+  "name": "LoggerTracer",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "HLogger tracer",
+  "author": "Sanix <saadjioa@gmail.com>",
+  "main": "index.js",
+  "dependencies": {
+    "create-if-not-exist": "0.0.2",
+    "fs": "0.0.1-security",
+    "file-exists": "^5.0.1"
+  }
+}
