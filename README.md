@@ -1,6 +1,6 @@
 # Simple Logger Tracer npm nodeJS
 
-A simple and easy Traquing log  for your project [FOR TRACKING YOUR SYSTEM ACTIONS :-P]
+A simple and easy Tracking log  for your project [FOR TRACKING YOUR SYSTEM ACTIONS :-P]
 
 ### Installing
 
@@ -9,14 +9,15 @@ Run:<br>
     npm install
   ```
 ## Usage
+  There is many level of logging, try these examples:
 ```javascript
   var klog = new Kennylog();
-  klog.trace("Probleme de creation de l'utilisateur");
-  klog.debug("Probleme de creation de l'utilisateur");
-  klog.info("Probleme de creation de l'utilisateur");
-  klog.warn("Probleme de creation de l'utilisateur");
-  klog.error("Probleme de creation de l'utilisateur");
-  klog.fatal("Probleme de creation de l'utilisateur");
+  klog.trace("Problem for level trace");
+  klog.debug("Problem for level debug");
+  klog.info("Problem for level info");
+  klog.warn("Problem for level warn");
+  klog.error("Problem for level error");
+  klog.fatal("Problem for level fatal");
 ```
 ## How to test it
   ```cmd
@@ -24,6 +25,12 @@ Run:<br>
     node index.js
   ```
 
+## Dependencies
+  ```cmd
+      fs 
+      createIfNotExist 
+      fileExists 
+  ```
 ## What is done?
   
   In your */log* directory, Kennylog will store *each daily logs* of the system life

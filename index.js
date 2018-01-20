@@ -24,16 +24,14 @@ Kennylog.prototype.logit = function(level,string){
 	if(fileExists.sync(currentfile)){
 		fs.appendFile(currentfile, currentmessage, function(err, data){
 		    if (err) console.log(err);
-		    console.log("Successfully Append to File.");
 		});
 	}else{
 		createIfNotExist(currentfile,'');
 		fs.writeFile(currentfile, currentmessage, function(err, data){
 		    if (err) console.log(err);
-		    console.log("Successfully Written to File.");
 		});
 	}
-
+	console.log("Successfully Save to the Daily log File.");
     console.log(currentmessage);
 };
 Kennylog.prototype.trace = function(string){ 
@@ -57,4 +55,4 @@ Kennylog.prototype.fatal = function (string) {
 
 // Usage:
 var klog = new Kennylog();
-klog.trace("Example of logging");
+klog.trace("Example of logging something with level trace");
