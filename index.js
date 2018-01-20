@@ -3,7 +3,7 @@
  */
 const fs = require('fs'), // File reading writting
 			createIfNotExist = require("create-if-not-exist"),
-				fileExists = require('file-exists');
+			fileExists = require('file-exists');
 
 /**
  * [getCurrentDate description]
@@ -22,14 +22,10 @@ Kennylog.prototype.logit = function(level,string){
 	var currentmessage = "["+getCurrentDate()+"] ["+level+"]: "+string+"<br>";
 
 	if(fileExists.sync(currentfile)){
-		fs.appendFile(currentfile, currentmessage, function(err, data){
-		    if (err) console.log(err);
-		});
+		fs.appendFile(currentfile, currentmessage, function(err, data){ if (err) console.log(err); });
 	}else{
 		createIfNotExist(currentfile,'');
-		fs.writeFile(currentfile, currentmessage, function(err, data){
-		    if (err) console.log(err);
-		});
+		fs.writeFile(currentfile, currentmessage, function(err, data){ if (err) console.log(err); });
 	}
 	console.log("Successfully Save to the Daily log File.");
     console.log(currentmessage);
@@ -56,3 +52,10 @@ Kennylog.prototype.fatal = function (string) {
 // Usage:
 var klog = new Kennylog();
 klog.trace("Example of logging something with level trace");
+
+// A sample with a try catch
+try {
+  alert(asdasd);
+} catch(e) {
+  klog.error(e.stack);
+}

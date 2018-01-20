@@ -19,6 +19,14 @@ Run:<br>
   klog.error("Problem for level error");
   klog.fatal("Problem for level fatal");
 ```
+OR when you are doing a try catch:
+```javascript
+  try {
+    alert(asdasd);
+  } catch(e) {
+    klog.error(e.stack);
+  }
+```
 ## How to test it
   ```cmd
     cd /path/to/thedownload/project
