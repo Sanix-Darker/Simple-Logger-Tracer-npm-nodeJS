@@ -30,7 +30,7 @@ Run:<br>
 
 ## Why use this?
 
-  I assume, ther is a lot of king of tracer for nodeJS, but, this is the best you can use because, you know exactly how you can personnalize it and it's need only 3 dependencies
+  I assumes, there is a lot of kind of tracers for nodeJS, but, this is the best you can use because, you know exactly how you can personnalize it for your project and it's need only *3 dependencies*
   
 ## Authors
 
