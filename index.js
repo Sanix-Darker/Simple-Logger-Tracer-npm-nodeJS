@@ -2,8 +2,7 @@
  * Simple Logger Tracer by Sanix Darker
  */
 const fs = require('fs'), // File reading writting
-			createIfNotExist = require("create-if-not-exist"),
-			fileExists = require('file-exists');
+			createIfNotExist = require("create-if-not-exist");
 
 /**
  * [getCurrentDate description]
@@ -15,13 +14,16 @@ function getCurrentDate(){
 	return (objToday.toLocaleString()).replace("/","-").replace("/","-");
 }
 
+/**
+ * [Kennylog description]
+ */
 var Kennylog = function(){ }
 
 Kennylog.prototype.logit = function(level,string){
 	var currentfile = "log/log "+(getCurrentDate().split(','))[0]+".html";
 	var currentmessage = "["+getCurrentDate()+"] ["+level+"]: "+string+"<br>";
 
-	if(fileExists.sync(currentfile)){
+	if(fs.existsSync(currentfile)){
 		fs.appendFile(currentfile, currentmessage, function(err, data){ if (err) console.log(err); });
 	}else{
 		createIfNotExist(currentfile,'');
@@ -55,7 +57,7 @@ klog.trace("Example of logging something with level trace");
 
 // A sample with a try catch
 try {
-  alert(asdasd);
+   console.log(asdasd);
 } catch(e) {
   klog.error(e.stack);
 }

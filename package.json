@@ -7,7 +7,6 @@
   "main": "index.js",
   "dependencies": {
     "create-if-not-exist": "0.0.2",
-    "fs": "0.0.1-security",
-    "file-exists": "^5.0.1"
+    "fs": "0.0.1-security"
   }
 }

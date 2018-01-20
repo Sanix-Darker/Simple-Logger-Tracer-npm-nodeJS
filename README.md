@@ -22,7 +22,7 @@ Run:<br>
 OR when you are doing a try catch:
 ```javascript
   try {
-    alert(asdasd);
+    console.log(asdasd); // A variable not set
   } catch(e) {
     klog.error(e.stack);
   }
@@ -34,10 +34,10 @@ OR when you are doing a try catch:
   ```
 
 ## Dependencies
+  Only 2 dependencies
   ```cmd
       fs 
       createIfNotExist 
-      fileExists 
   ```
 ## What is done?
   
@@ -45,12 +45,12 @@ OR when you are doing a try catch:
 
 ## What you can get?
   ```cli
-    [1-21-2018, 12:20:05 AM] [TRACE]: Example of logging something with level trace
-    [1-21-2018, 12:20:05 AM] [ERROR]: ReferenceError: alert is not defined at Object. (F:\Documents\Simple Logger Tracer npm nodeJS\index.js:58:3) 
+    [1-21-2018, 12:56:23 AM] [TRACE]: Example of logging something with level trace
+    [1-21-2018, 12:56:23 AM] [ERROR]: ReferenceError: asdasd is not defined at Object
   ```
 ## Why use this?
 
-  I assumes, there is a lot of kind of tracers for nodeJS, but, this is the best you can use because, you know exactly how you can personnalize it for your project and it's need only *3 dependencies*
+  I assumes, there is a lot of kind of tracers for nodeJS, but, this is the best you can use because, you know exactly how you can personnalize it for your project and it's need only *2 dependencies*
   
 ## Authors
 
