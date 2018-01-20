@@ -43,6 +43,11 @@ OR when you are doing a try catch:
   
   In your */log* directory, Kennylog will store *each daily logs* of the system life
 
+## What you can get?
+  ```cli
+    [1-21-2018, 12:20:05 AM] [TRACE]: Example of logging something with level trace
+    [1-21-2018, 12:20:05 AM] [ERROR]: ReferenceError: alert is not defined at Object. (F:\Documents\Simple Logger Tracer npm nodeJS\index.js:58:3) 
+  ```
 ## Why use this?
 
   I assumes, there is a lot of kind of tracers for nodeJS, but, this is the best you can use because, you know exactly how you can personnalize it for your project and it's need only *3 dependencies*
