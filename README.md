@@ -48,6 +48,9 @@ OR when you are doing a try catch:
     [1-21-2018, 12:56:23 AM] [TRACE]: Example of logging something with level trace
     [1-21-2018, 12:56:23 AM] [ERROR]: ReferenceError: asdasd is not defined at Object
   ```
+## The render:
+  <img src="kenny.png" style="width: 100%;">
+  
 ## Why use this?
 
   I assumes, there is a lot of kind of tracers for nodeJS, but, this is the best you can use because, you know exactly how you can personnalize it for your project and it's need only *2 dependencies*

@@ -1,0 +1,18 @@
+.trace{
+	color: green;
+}
+.debug{ 
+	color: purple;
+}
+.info{ 
+	color: grey;
+}
+.warn{ 
+	color: yellow;
+}
+.error { 
+	color: red;
+}
+.fatal{ 
+	color: orange;
+}
