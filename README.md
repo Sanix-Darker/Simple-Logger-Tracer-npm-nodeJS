@@ -9,17 +9,17 @@ Run:<br>
     npm install
   ```
 ## Usage
-  There is many level of logging, try these examples:
+  There is many tracking level of logging, try theese examples:
 ```javascript
   var klog = new Kennylog();
-  klog.trace("Problem for level trace");
-  klog.debug("Problem for level debug");
-  klog.info("Problem for level info");
-  klog.warn("Problem for level warn");
-  klog.error("Problem for level error");
-  klog.fatal("Problem for level fatal");
+  klog.trace("A log for level trace");
+  klog.debug("A log for level debug");
+  klog.info("A log for level info");
+  klog.warn("A log for level warn");
+  klog.error("A log for level error");
+  klog.fatal("A log for level fatal");
 ```
-OR when you are doing a try catch:
+OR when you are doing a try - catch:
 ```javascript
   try {
     console.log(asdasd); // A variable not set
@@ -30,7 +30,7 @@ OR when you are doing a try catch:
 ## How to test it
   ```cmd
     cd /path/to/thedownload/project
-    node index.js
+    node demo.js
   ```
 
 ## Dependencies
@@ -41,15 +41,15 @@ OR when you are doing a try catch:
   ```
 ## What is done?
   
-  In your */log* directory, Kennylog will store *each daily logs* of the system life
+  In your */log* directory, Kennylog will store *each daily logs* of the system life, and track anything.
 
 ## What you can get?
-  ```cli
-    [1-21-2018, 12:56:23 AM] [TRACE]: Example of logging something with level trace
-    [1-21-2018, 12:56:23 AM] [ERROR]: ReferenceError: asdasd is not defined at Object
+  ```shell
+    > [1-21-2018, 12:56:23 AM] [TRACE]: Example of logging something with level trace
+    > [1-21-2018, 12:56:23 AM] [ERROR]: ReferenceError: asdasd is not defined at Object
   ```
 ## The render:
-  <img src="kenny.png" style="width: 100%;">
+  <img src="klog_img/kenny.png" style="width: 100%;">
   
 ## Why use this?
 
@@ -63,4 +63,4 @@ OR when you are doing a try catch:
 
 * Hat tip to anyone who's code was used
 * Inspiration
-* etc
+* etc...

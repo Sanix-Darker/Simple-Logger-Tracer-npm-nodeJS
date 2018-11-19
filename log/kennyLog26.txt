@@ -1,0 +1,27 @@
+
+ 
+ [1/26/2018, 4:48:46 PM] [TRACE]: Example of logging something with level trace
+ 
+ [1/26/2018, 4:48:47 PM] [ERROR]: ReferenceError: asdasd is not defined
+    at Object.<anonymous> (F:\Documents\Simple Logger Tracer npm nodeJS\index.js:72:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.runMain (module.js:604:10)
+    at run (bootstrap_node.js:393:7)
+    at startup (bootstrap_node.js:150:9)
+    at bootstrap_node.js:508:3
+ 
+ [1/26/2018, 4:48:47 PM] [TRACE]: Problem for level trace
+ 
+ [1/26/2018, 4:48:47 PM] [DEBUG]: Problem for level debug
+ 
+ [1/26/2018, 4:48:47 PM] [INFO]: Problem for level info
+ 
+ [1/26/2018, 4:48:47 PM] [WARN]: Problem for level warn
+ 
+ [1/26/2018, 4:48:47 PM] [ERROR]: Problem for level error
+ 
+ [1/26/2018, 4:48:47 PM] [FATAL]: Problem for level fatal

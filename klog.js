@@ -29,12 +29,12 @@ Kennylog.prototype.logit = function(level,string){
 	var currentmessage_highlignt = "<br><b>["+(getCurrentDate()).replace("-","/").replace("-","/")+"]</b> <span class='"+level+"'>["+level+"]</span>: <i>"+string+"</i>";
 
 	if(!fs.existsSync(globalfile) && !fs.existsSync(globalfile_highlight)){
-		createIfNotExist(globalfile_highlight,'<link rel="stylesheet" type="text/css" href="../kenny.css">');
+		createIfNotExist(globalfile_highlight,'<link rel="stylesheet" type="text/css" href="../klog_css/kenny.css">');
 		createIfNotExist(globalfile,'');
 	}
 
 	if(!fs.existsSync(currentfile)){
-		createIfNotExist(currentfile,'<link rel="stylesheet" type="text/css" href="../kenny.css">');	
+		createIfNotExist(currentfile,'<link rel="stylesheet" type="text/css" href="../klog_css/kenny.css">');	
 	}
 
 	fs.appendFile(currentfile, currentmessage_highlignt, function(err, data){ if (err) console.log(err); });
@@ -44,39 +44,23 @@ Kennylog.prototype.logit = function(level,string){
 	console.log("Successfully Save to the Daily log File.");
     console.log(currentmessage);
 };
-Kennylog.prototype.trace = function(string){ 
-	this.logit("TRACE",string);
+module.exports = {
+	trace: function(string){ 
+		Kennylog.prototype.logit("TRACE", string);
+	},
+	debug : function (string) { 
+		Kennylog.prototype.logit("DEBUG", string);
+	},
+	info : function (string) { 
+		Kennylog.prototype.logit("INFO", string);
+	},
+	warn : function (string) { 
+		Kennylog.prototype.logit("WARN", string);
+	},
+	error : function (string) { 
+		Kennylog.prototype.logit("ERROR", string);
+	},
+	fatal : function (string) { 
+		Kennylog.prototype.logit("FATAL", string);
+	}
 };
-Kennylog.prototype.debug = function (string) { 
-	this.logit("DEBUG",string);
-};
-Kennylog.prototype.info = function (string) { 
-	this.logit("INFO",string);
-};
-Kennylog.prototype.warn = function (string) { 
-	this.logit("WARN",string);
-};
-Kennylog.prototype.error = function (string) { 
-	this.logit("ERROR",string);
-};
-Kennylog.prototype.fatal = function (string) { 
-	this.logit("FATAL",string);
-};
-
-// Usage:
-var klog = new Kennylog();
-klog.trace("Example of logging something with level trace");
-
-// A sample with a try catch
-try {
-   console.log(asdasd);
-} catch(e) {
-  klog.error(e.stack);
-}
-
-  klog.trace("Problem for level trace");
-  klog.debug("Problem for level debug");
-  klog.info("Problem for level info");
-  klog.warn("Problem for level warn");
-  klog.error("Problem for level error");
-  klog.fatal("Problem for level fatal");
